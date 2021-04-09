@@ -1,0 +1,7 @@
+name = "JuliaCallJuMP"
+uuid = "71c6edd3-0183-4121-990d-6345a7751941"
+authors = ["asiripanich <17020181+asiripanich@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
