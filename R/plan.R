@@ -3,5 +3,5 @@
 
 plan <- drake_plan(
   x = 1,
-  optimisation = optimise(x)
+  res = optimise(x)
 )

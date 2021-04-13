@@ -2,6 +2,6 @@ module JuliaCallJuMP
 
 greet() = print("Hello World!")
 
-optimise() = true
+optimise(x, y) = x, y
 
 end # module

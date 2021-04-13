@@ -6,5 +6,5 @@
 optimise <- function(x) {
   JuliaCall::julia_setup()
   julia_library("JuliaCallJuMP")
-  julia_eval("JuliaCallJuMP.optimise()")
+  julia_eval("JuliaCallJuMP.optimise")(cars, 1)
 }
