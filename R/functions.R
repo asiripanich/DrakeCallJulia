@@ -2,9 +2,13 @@
 # This is where you write them.
 # Details: https://books.ropensci.org/drake/plans.html#functions
 
+optimise <- function(julia, x) {
+  # JuliaCall::julia_setup()
+  julia$library("JuliaCallJuMP")
+  julia$eval("JuliaCallJuMP.optimise")(cars, x)
+}
 
-optimise <- function(x) {
-  JuliaCall::julia_setup()
-  julia_library("JuliaCallJuMP")
-  julia_eval("JuliaCallJuMP.optimise")(cars, 1)
+solve_shortest_path <- function(julia) {
+  julia$library("JuliaCallJuMP")
+  julia$eval("JuliaCallJuMP.solve_shortest_path()")
 }

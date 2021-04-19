@@ -6,7 +6,7 @@
 source("R/packages.R")  # Load your packages, e.g. library(drake).
 source("R/functions.R") # Define your custom code as a bunch of functions.
 source("R/plan.R")      # Create your drake plan.
-
+options(clustermq.scheduler = "multicore")
 # _drake.R must end with a call to drake_config().
 # The arguments to drake_config() are basically the same as those to make().
-drake_config(plan)
+drake_config(plan, parallelism = "clustermq", jobs = 2)
