@@ -4,11 +4,11 @@
 
 optimise <- function(julia, x) {
   # JuliaCall::julia_setup()
-  julia$library("JuliaCallJuMP")
-  julia$eval("JuliaCallJuMP.optimise")(cars, x)
+  julia$library("DrakeCallJulia")
+  julia$eval("DrakeCallJulia.optimise")(cars, x)
 }
 
 solve_shortest_path <- function(julia) {
-  julia$library("JuliaCallJuMP")
-  julia$eval("JuliaCallJuMP.solve_shortest_path()")
+  julia$library("DrakeCallJulia")
+  julia$eval("DrakeCallJulia.solve_shortest_path()")
 }

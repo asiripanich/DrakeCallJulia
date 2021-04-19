@@ -1,3 +1,3 @@
 using PackageCompiler
 
-create_sysimage(:JuliaCallJuMP, sysimage_path = "Sysimage.so")
+create_sysimage(:DrakeCallJulia, sysimage_path = "Sysimage.so")

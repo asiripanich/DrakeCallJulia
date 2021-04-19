@@ -1,4 +1,4 @@
-module JuliaCallJuMP
+module DrakeCallJulia
 import JuMP
 import LinearAlgebra
 import GLPK

@@ -1,4 +1,4 @@
-name = "JuliaCallJuMP"
+name = "DrakeCallJulia"
 uuid = "71c6edd3-0183-4121-990d-6345a7751941"
 authors = ["asiripanich <17020181+asiripanich@users.noreply.github.com>"]
 version = "0.1.0"
