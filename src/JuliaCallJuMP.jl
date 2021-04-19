@@ -7,6 +7,8 @@ greet() = print("Hello World!")
 
 optimise(x, y) = x, y
 
+# This function is from a JuMP tutorial. 
+# See: https://nbviewer.jupyter.org/github/jump-dev/JuMPTutorials.jl/blob/master/notebook/modelling/network_flows.ipynb
 function solve_shortest_path()
     G = [
     0 100 30  0  0;
